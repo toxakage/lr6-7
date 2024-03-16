@@ -1,0 +1,279 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  text-decoration: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+* img {
+  max-width: 100%;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  background-color: #F9F5EB;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.red {
+  color: green;
+}
+
+.header {
+  background-color: #8B008B;
+  padding: 20px 0;
+}
+.header__container {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  color: #F9F5EB;
+  font-weight: bold;
+}
+
+.header__list {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.header__list-link {
+  color: #F9F5EB;
+  transition: all 0.3s ease-out;
+}
+.header__list-link:hover {
+  color: #E4DCCF;
+}
+@media (max-width: 600px) {
+  .header__list {
+    display: none;
+  }
+}
+
+.hero {
+  margin-top: 50px;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero__title {
+  color: #8B008B;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 25px;
+  line-height: 120%;
+}
+.hero__text {
+  line-height: 160%;
+  max-width: 400px;
+}
+@media (max-width: 350px) {
+  .hero__text {
+    font-size: 12px;
+  }
+}
+
+.images {
+  padding: 60px 0;
+}
+.images__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+@media (max-width: 600px) {
+  .images__container {
+    flex-direction: column;
+  }
+}
+.images__content {
+  flex: 0 1 40%;
+}
+.images__title {
+  color: #8B008B;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 25px;
+  line-height: 120%;
+}
+.images__text {
+  line-height: 160%;
+  max-width: 400px;
+}
+@media (max-width: 350px) {
+  .images__text {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+.images__main {
+  flex: 0 1 30%;
+}
+
+.cards {
+  padding: 60px 0;
+}
+
+.cards__items {
+  row-gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.card__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #E4DCCF;
+  border-radius: 5px;
+  padding: 30px 20px;
+  max-width: 300px;
+}
+
+.info__card {
+  text-align: center;
+}
+.info__card-title {
+  color: #8B008B;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.info__card-text {
+  line-height: 165%;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card__item-image {
+  max-width: 200px;
+}
+.card__item-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+zz
+
+.card__item-button {
+  padding: 20px 45px;
+  background-color: transparent;
+  border: 1px solid #8B008B;
+  font-weight: bold;
+  color: #8B008B;
+  transition: all 0.3s ease-out;
+}
+.card__item-button:hover {
+  background-color: #8B008B;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #8B008B;
+}
+
+.footer__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer__item {
+  flex: 0 1 2%;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+}
